@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/Inventory_Management
+    username: postgres
+    password: "Taffy&0402"
+    driver-class-name: org.postgresql.Driver
+    hikari:
+      maximum-pool-size: 10
+      minimum-idle: 5
+      idle-timeout: 600000      # 10 minutes
+      max-lifetime: 1800000     # 30 minutes
+      connection-timeout: 30000 # 30 seconds
+      pool-name: HikariCPPool
